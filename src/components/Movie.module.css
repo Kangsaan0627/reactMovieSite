@@ -1,55 +1,79 @@
-.movie {
-    background-color: white;
-    margin-bottom: 70px;
-    font-weight: 300;
-    padding: 20px;
-    border-radius: 5px;
-    color: #adaeb9;
+/* Container */
+/* Container */
+body{
+     background-color: white;
+}
+.container {
+    background-color: #0d0d0d; /* 어두운 배경 색상 (우선순위 높임) */
+    color: #ffffff; /* 텍스트 색상 */
+    font-family: Arial, sans-serif; /* 원하는 글꼴 지정 */
+    padding: 20px; /* 컨텐츠 패딩 */
+    
+  }
+  
+  
+  /* Loader */
+  .loader {
+    color: #ffffff; /* 로딩 텍스트 색상 */
+  }
+  
+  /* Movies */
+  .movies {
     display: grid;
-    grid-template-columns: minmax(150px, 1fr) 2fr;
-    grid-gap: 20px;
-    text-decoration: none;
-    color: inherit;
-    box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
-      0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px; /* 그리드 간격 */
   }
   
+  /* Movie */
+  .movie {
+    
+    background-color: white; /* 영화 카드 배경 색상 */
+    padding: 20px; /* 카드 내부 패딩 */
+    border-radius: 10px; /* 카드 모서리 둥글게 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+    transition: transform 0.3s ease-in-out; /* 호버 효과 */
+  }
+  
+  .movie:hover {
+    transform: translateY(-5px); /* 호버 시 약간 위로 이동 */
+  }
+
+  /* Movie Image */
   .movie__img {
-    position: relative;
-    top: -50px;
-    max-width: 150px;
-    width: 100%;
-    margin-right: 30px;
-    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
-      0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+    display: block; /* 이미지를 블록 요소로 설정하여 가운데 정렬을 쉽게 할 수 있도록 함 */
+    margin: 0 auto; /* 좌우 여백을 auto로 설정하여 가운데 정렬 */
+    max-width: 100%; /* 이미지 최대 너비 */
+    height: auto; /* 이미지 비율 유지 */
+    border-radius: 8px; /* 이미지 모서리 둥글게 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+    margin-bottom: 10px; /* 이미지 아래 여백 추가 */
+}
+
+  
+  /* Movie Title */
+  .movie__title {
+    margin: 10px 0; /* 제목과 다른 요소 간격 */
+    font-size: 18px; /* 제목 글꼴 크기 */
+    font-weight: 600; /* 제목 글꼴 굵기 */
   }
   
-  .movie__title,
+  /* Movie Year */
   .movie__year {
-    margin: 0;
-    font-weight: 300;
-    text-decoration: none;
+    font-size: 14px; /* 연도 글꼴 크기 */
+    font-weight: 300; /* 연도 글꼴 굵기 */
   }
   
-  .movie__title a {
-    margin-bottom: 5px;
-    font-size: 24px;
-    color: #2c2c2c;
-    text-decoration: none;
-  }
-  
+  /* Movie Genres */
   .movie__genres {
     list-style: none;
     padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 5px 0px;
+    margin: 10px 0; /* 장르와 다른 요소 간격 */
   }
   
-  .movie__genres li,
-  .movie__year {
-    margin-right: 10px;
-    font-size: 14px;
+  .movie__genres li {
+    display: inline-block; /* 요소를 가로로 배치 */
+    margin-right: 10px; /* 요소 간격 */
+    font-size: 14px; /* 장르 글꼴 크기 */
+    font-weight: 300; /* 장르 글꼴 굵기 */
   }
   

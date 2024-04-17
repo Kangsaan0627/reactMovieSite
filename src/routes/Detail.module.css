@@ -1,0 +1,70 @@
+/* Detail.module.css */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+.backgroundImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(10px);
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* 화면 상단에 정렬 */
+  width: 100%;
+  height: 100%;
+}
+.details {
+    text-align: center;
+    margin-top: 20px;
+  }
+.poster {
+    max-width: 80%;
+    z-index: 1;
+    margin-top: 60px; /* 좀 더 아래로 이동 */
+  }
+  .title {
+    color: #ffffff; /* 텍스트 색상 */
+    font-weight: bold; /* 굵은 글꼴 */
+    font-size: 25px; /* 제목 글자 크기 조정 */
+    margin-bottom: 10px; /* 아래쪽 여백 추가 */
+  }
+/* Detail.module.css */
+
+.genres {
+    color: #ffffff; /* 텍스트 색상 */
+    font-size: 16px; /* 장르 글자 크기를 1px 더 줄입니다. */
+    position: absolute; /* 절대 위치 */
+    top: calc(50%); /* 흰선 아래에 위치하도록 설정합니다. */
+    left: 50%; /* 가로 중앙 정렬 */
+    transform: translateX(-50%); /* 가운데 정렬 */
+    font-weight: bold; /* 굵은 글꼴 */
+  }
+  .separator {
+    width: calc(100% - 40px); /* 줄거리의 양 옆에 여백을 고려하여 설정 */
+    margin: 40px auto 30px auto; /* 흰 선을 조금 위로 올리고 줄거리를 아래로 내립니다. */
+    border-bottom: 1px solid white; /* 흰 선 스타일 */
+  }
+  
+  .summary {
+    color: #ffffff; /* 텍스트 색상 */
+    font-weight: bold; /* 굵은 글꼴 */
+    max-width: 800px; /* 최대 너비 설정 */
+    margin: 0 auto 50px auto; /* 줄거리를 아래로 조금 더 내립니다. */
+    padding: 0 20px; /* 좌우 여백 추가 */
+    text-align: justify; /* 텍스트 양쪽 정렬 */
+    font-size: 18px; /* 줄거리 글자 크기를 1px 더 키웁니다. */
+  }
+  
