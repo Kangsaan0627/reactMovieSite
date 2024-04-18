@@ -14,7 +14,7 @@ body{
   
   /* Loader */
   .loader {
-    color: #ffffff; /* 로딩 텍스트 색상 */
+   background-color: rgba(0, 0, 0, 0.1);
   }
   
   /* Movies */
@@ -49,7 +49,7 @@ body{
     margin-bottom: 10px; /* 이미지 아래 여백 추가 */
 }
 
-  
+
   /* Movie Title */
   .movie__title {
     margin: 10px 0; /* 제목과 다른 요소 간격 */

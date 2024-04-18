@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import styles from "./Movie.module.css";
@@ -7,6 +7,7 @@ function Movie({ id, coverImg, title, year, summary, genres }) {
     useEffect(() => {
         <div><h4 className="movieText">Movies</h4></div>
       }, []);
+
   return (
     <div className={styles.movie}>
       <img src={coverImg} alt={title} className={styles.movie__img} />
